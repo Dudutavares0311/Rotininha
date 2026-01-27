@@ -13,24 +13,36 @@
 
     h1 {
       color: #ff69b4;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #d63384;
     }
 
     table {
       margin: auto;
       border-collapse: collapse;
       background: white;
-      border-radius: 15px;
+      border-radius: 20px;
       overflow: hidden;
+      box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3);
     }
 
     th, td {
-      padding: 12px;
+      padding: 12px 14px;
       border: 1px solid #ffc0cb;
-      font-size: 20px;
+      font-size: 18px;
     }
 
     th {
       background-color: #ffb6c1;
+    }
+
+    td:first-child {
+      text-align: left;
+      font-weight: bold;
+      background-color: #fff0f5;
     }
 
     .cell {
@@ -47,11 +59,19 @@
 <body>
 
 <h1>🌸 Rotininha da Dedê ⭐</h1>
+<p>Clique na flor quando a tarefa for concluída!</p>
 
 <table>
   <tr>
     <th>Atividade</th>
-    <th>Seg</th><th>Ter</th><th>Qua</th><th>Qui</th><th>Sex</th><th>Sáb</th><th>Dom</th>
+    <th>Seg</th><th>Ter</th><th>Qua</th><th>Qui</th>
+    <th>Sex</th><th>Sáb</th><th>Dom</th>
+  </tr>
+
+  <tr>
+    <td>🇺🇸 Estudos / Inglês</td>
+    <td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
+    <td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
   </tr>
 
   <tr>
@@ -66,13 +86,36 @@
     <td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
   </tr>
 
+  <tr>
+    <td>👟 Exercícios</td>
+    <td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
+    <td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
+  </tr>
+
+  <tr>
+    <td>✍️ Journaling</td>
+    <td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
+    <td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
+  </tr>
+
+  <tr>
+    <td>💊 Anti</td>
+    <td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
+    <td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
+  </tr>
+
+  <tr>
+    <td>💧 Água</td>
+    <td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
+    <td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
+  </tr>
+
 </table>
 
 <script>
   const cells = document.querySelectorAll(".cell");
 
   cells.forEach((cell, index) => {
-    // carrega estado salvo
     if (localStorage.getItem(index) === "star") {
       cell.textContent = "⭐";
     }
