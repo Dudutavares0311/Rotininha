@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Rotininha da Dedê</title>
+
+  <style>
+    body {
+      background-color: #ffe6f2;
+      font-family: "Comic Sans MS", cursive;
+      text-align: center;
+    }
+
+    h1 {
+      color: #ff69b4;
+    }
+
+    table {
+      margin: auto;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 12px;
+      border: 1px solid #ffc0cb;
+      font-size: 20px;
+    }
+
+    th {
+      background-color: #ffb6c1;
+    }
+
+    .cell {
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .cell:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>🌸 Rotininha da Dedê ⭐</h1>
+
+<table>
+  <tr>
+    <th>Atividade</th>
+    <th>Seg</th><th>Ter</th><th>Qua</th><th>Qui</th><th>Sex</th><th>Sáb</th><th>Dom</th>
+  </tr>
+
+  <tr>
+    <td>📚 Leitura</td>
+    <td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
+    <td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
+  </tr>
+
+  <tr>
+    <td>🍱 Almoço</td>
+    <td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
+    <td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
+  </tr>
+
+</table>
+
+<script>
+  const cells = document.querySelectorAll(".cell");
+
+  cells.forEach((cell, index) => {
+    // carrega estado salvo
+    if (localStorage.getItem(index) === "star") {
+      cell.textContent = "⭐";
+    }
+
+    cell.addEventListener("click", () => {
+      if (cell.textContent === "🌸") {
+        cell.textContent = "⭐";
+        localStorage.setItem(index, "star");
+      } else {
+        cell.textContent = "🌸";
+        localStorage.removeItem(index);
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
