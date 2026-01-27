@@ -1,135 +1,198 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Rotininha da Dedê</title>
+<meta charset="UTF-8">
+<title>Rotininha da Dedê ⭐</title>
 
-  <style>
-    body {
-      background-color: #ffe6f2;
-      font-family: "Comic Sans MS", cursive;
-      text-align: center;
-    }
+<style>
+body {
+  background-color: #fde4ec;
+  background-image:
+    linear-gradient(#f8bcd4 1px, transparent 1px),
+    linear-gradient(90deg, #f8bcd4 1px, transparent 1px);
+  background-size: 40px 40px;
+  font-family: "Comic Sans MS", cursive;
+  text-align: center;
+  padding: 20px;
+}
 
-    h1 {
-      color: #ff69b4;
-      margin-bottom: 10px;
-    }
+h1 {
+  color: #ff5fa2;
+}
 
-    p {
-      color: #d63384;
-    }
+.container {
+  background: white;
+  border-radius: 25px;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 0 10px 25px rgba(255,105,180,0.3);
+}
 
-    table {
-      margin: auto;
-      border-collapse: collapse;
-      background: white;
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3);
-    }
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
 
-    th, td {
-      padding: 12px 14px;
-      border: 1px solid #ffc0cb;
-      font-size: 18px;
-    }
+th, td {
+  border: 2px solid #ffb6c1;
+  padding: 10px;
+  font-size: 18px;
+}
 
-    th {
-      background-color: #ffb6c1;
-    }
+th {
+  background: #ffc1dc;
+}
 
-    td:first-child {
-      text-align: left;
-      font-weight: bold;
-      background-color: #fff0f5;
-    }
+td:first-child {
+  text-align: left;
+  font-weight: bold;
+  background: #fff0f6;
+}
 
-    .cell {
-      cursor: pointer;
-      transition: transform 0.2s;
-    }
+.cell {
+  cursor: pointer;
+  font-size: 22px;
+}
 
-    .cell:hover {
-      transform: scale(1.2);
-    }
-  </style>
+.counter {
+  margin: 20px;
+  font-size: 22px;
+  color: #ff5fa2;
+}
+
+.rewards {
+  background: #ffe6f2;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.reward {
+  font-size: 20px;
+  opacity: 0.3;
+}
+
+.reward.unlocked {
+  opacity: 1;
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #ff69b4;
+}
+</style>
 </head>
 
 <body>
 
 <h1>🌸 Rotininha da Dedê ⭐</h1>
-<p>Clique na flor quando a tarefa for concluída!</p>
+<p><i>"O sucesso é a soma de pequenos esforços repetidos dia após dia."</i></p>
+
+<div class="container">
 
 <table>
-  <tr>
-    <th>Atividade</th>
-    <th>Seg</th><th>Ter</th><th>Qua</th><th>Qui</th>
-    <th>Sex</th><th>Sáb</th><th>Dom</th>
-  </tr>
+<tr>
+<th>Item</th>
+<th>Seg</th><th>Ter</th><th>Qua</th><th>Qui</th>
+<th>Sex</th><th>Sáb</th><th>Dom</th>
+</tr>
 
-  <tr>
-    <td>🇺🇸 Estudos / Inglês</td>
-    <td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
-    <td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
-  </tr>
+<tr>
+<td>🇺🇸 Estudos / Inglês</td>
+<td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
+<td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
+</tr>
 
-  <tr>
-    <td>📚 Leitura</td>
-    <td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
-    <td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
-  </tr>
+<tr>
+<td>📚 Leitura</td>
+<td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
+<td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
+</tr>
 
-  <tr>
-    <td>🍱 Almoço</td>
-    <td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
-    <td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
-  </tr>
+<tr>
+<td>🍱 Almoço</td>
+<td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
+<td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
+</tr>
 
-  <tr>
-    <td>👟 Exercícios</td>
-    <td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
-    <td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
-  </tr>
+<tr>
+<td>👟 Exercícios</td>
+<td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
+<td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
+</tr>
 
-  <tr>
-    <td>✍️ Journaling</td>
-    <td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
-    <td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
-  </tr>
+<tr>
+<td>✍️ Journaling</td>
+<td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
+<td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
+</tr>
 
-  <tr>
-    <td>💊 Anti</td>
-    <td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
-    <td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
-  </tr>
+<tr>
+<td>💊 Anti</td>
+<td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
+<td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
+</tr>
 
-  <tr>
-    <td>💧 Água</td>
-    <td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
-    <td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
-  </tr>
+<tr>
+<td>💧 Água</td>
+<td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
+<td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td><td class="cell">🌸</td>
+</tr>
 
 </table>
 
+<div class="counter">
+⭐ Estrelas conquistadas: <span id="stars">0</span>
+</div>
+
+<div class="rewards">
+<h3>🏆 Recompensas</h3>
+<div id="r1" class="reward">🌈 5 estrelas – Desenho especial</div>
+<div id="r2" class="reward">🧸 10 estrelas – Brinquedo</div>
+<div id="r3" class="reward">👑 20 estrelas – Dia especial</div>
+</div>
+
+</div>
+
+<footer>
+Feito com ❤️ pelo Papai
+</footer>
+
 <script>
-  const cells = document.querySelectorAll(".cell");
+const cells = document.querySelectorAll(".cell");
+const starCounter = document.getElementById("stars");
 
-  cells.forEach((cell, index) => {
-    if (localStorage.getItem(index) === "star") {
+function updateRewards(stars) {
+  if (stars >= 5) document.getElementById("r1").classList.add("unlocked");
+  if (stars >= 10) document.getElementById("r2").classList.add("unlocked");
+  if (stars >= 20) document.getElementById("r3").classList.add("unlocked");
+}
+
+let stars = Number(localStorage.getItem("stars")) || 0;
+starCounter.textContent = stars;
+updateRewards(stars);
+
+cells.forEach((cell, i) => {
+  if (localStorage.getItem("cell"+i) === "star") {
+    cell.textContent = "⭐";
+  }
+
+  cell.addEventListener("click", () => {
+    if (cell.textContent === "🌸") {
       cell.textContent = "⭐";
+      stars++;
+      localStorage.setItem("cell"+i, "star");
+    } else {
+      cell.textContent = "🌸";
+      stars--;
+      localStorage.removeItem("cell"+i);
     }
-
-    cell.addEventListener("click", () => {
-      if (cell.textContent === "🌸") {
-        cell.textContent = "⭐";
-        localStorage.setItem(index, "star");
-      } else {
-        cell.textContent = "🌸";
-        localStorage.removeItem(index);
-      }
-    });
+    localStorage.setItem("stars", stars);
+    starCounter.textContent = stars;
+    updateRewards(stars);
   });
+});
 </script>
 
 </body>
