@@ -164,9 +164,9 @@ const cells = document.querySelectorAll(".cell");
 const starCounter = document.getElementById("stars");
 
 function updateRewards(stars) {
-  if (stars >= 5) document.getElementById("r1").classList.add("unlocked");
-  if (stars >= 10) document.getElementById("r2").classList.add("unlocked");
-  if (stars >= 20) document.getElementById("r3").classList.add("unlocked");
+  if (stars >= 20) document.getElementById("r1").classList.add("unlocked");
+  if (stars >= 50) document.getElementById("r2").classList.add("unlocked");
+  if (stars >= 100) document.getElementById("r3").classList.add("unlocked");
 }
 
 let stars = Number(localStorage.getItem("stars")) || 0;
@@ -197,3 +197,4 @@ cells.forEach((cell, i) => {
 
 </body>
 </html>
+
